@@ -1,0 +1,236 @@
+/*my portfolio style*/
+/*mainHeader and navbar*/
+#mainTaskbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 85px;
+    background-color: black;
+}
+
+nav {
+    width: 564px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#logo {
+    margin-top: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.mainHeader a {
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight:500;
+    text-decoration-line: none;
+    color: white;
+}            
+
+
+/*hero section*/
+
+#heroZone {
+    display: grid;
+    height: 715px;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "bigLogo ..."
+    "quote  mytitle";
+    background-image: url("../images/LightBulb.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;  
+
+}
+
+.bigLogo {
+    grid-area: bigLogo;
+    margin-left: 150px;
+    margin-top: 0 auto;
+    padding-bottom: 25px;
+    width:281px;
+    height: 208px;
+}
+
+
+.mytitle {
+    grid-area: mytitle;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFAB2E;
+
+}
+
+.mytitle h2 {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFAB2E;
+}
+
+.quote {
+    grid-area: quote;
+    margin-left: 150px;
+    margin-top: 276.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+
+/*main content*/
+
+#contentGrid {
+    display: grid;
+    position: relative;
+    left: 330px;
+    height: 945px;
+    width: 785px;
+    margin-top: 84px;
+    margin-bottom: 84px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "cards1 cards2"
+    "cards3 cards4";
+    padding: 15px;
+
+}
+
+.contentGridArea {
+    height: 450px;
+    width: 370px;
+    background-color: grey;
+}
+#cards1 {
+    grid-area: cards1;
+    background-image: url("../images/Cards_DESE.jpg");
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+#cards2 {
+    grid-area: cards2;
+    background-image: url("../images/Cards_Taskie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+#cards3 {
+    grid-area: cards3;
+    background-image: url("../images/Cards_B4VK.jpg");
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+#cards4 {
+    grid-area: cards4;
+    background-image: url("../images/Cards_Other.jpg");
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+/*footer*/
+
+#footerGrid {
+    display: grid;
+    height: 273px;
+    padding: 42px;
+    padding-top: 42px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    grid-template-rows: 154px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contactHeader scHeader"
+    " fineprint fineprint";
+    background-color: black;
+}
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    width: 273px;
+    height: 154px;
+      
+}
+.footerBox2 {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-self: flex-start;
+    align-self: center;
+
+}
+
+#contactHeader {
+    grid-area: contactHeader;
+    justify-self: center;
+  
+}
+
+
+#scHeader {
+    grid-area: scHeader;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 273px;
+    height: 154px;
+}
+
+
+.fineprint {
+    grid-area: fineprint;
+    justify-self: center;
+    align-self: flex-end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+#scIcons img {
+    width: 64px;
+    height: 64px;
+}
+#contactHeader h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: #ffffff;
+}
+#contactHeader p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+#scHeader h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: #ffffff;
+}
+
